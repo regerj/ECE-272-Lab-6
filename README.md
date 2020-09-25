@@ -1,3 +1,5 @@
+_**This lab instruction set is the property of Oregon State University, I claim no credit to these instructions aside from manually formatting it to appear well on .md files, only to my solution to the lab.**_
+
 # ECE 272 Section 6: Video Graphics Array (VGA)
 ### 6.1 Background Information
 Video Graphics Array (VGA) can be used to display a wide range of resolutions and refresh rates. They draw lines left to right, top to bottom. Each pixel is controlled by 3 analog pins for Red, Green, and Blue (RGB). One common graphics mode is 640x480 at 60Hz. Modern VGA monitors are multi-sync so they are built to work with a range of frequencies. The two other pins that matter for controlling the image are Horizontal Sync and Vertical Sync. When Hysnc goes to 0, the next line starts to draw. When Vysnc goes to 0, it goes back to the top line again, starting a new frame.
