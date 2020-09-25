@@ -2,7 +2,10 @@
 ### 6.1 Background Information
 Video Graphics Array (VGA) can be used to display a wide range of resolutions and refresh rates. They draw lines left to right, top to bottom. Each pixel is controlled by 3 analog pins for Red, Green, and Blue (RGB). One common graphics mode is 640x480 at 60Hz. Modern VGA monitors are multi-sync so they are built to work with a range of frequencies. The two other pins that matter for controlling the image are Horizontal Sync and Vertical Sync. When Hysnc goes to 0, the next line starts to draw. When Vysnc goes to 0, it goes back to the top line again, starting a new frame.
 
- VGA DAC setup
+<p align="center">
+  <img width="550" height="400" src="https://github.com/regerj/ECE-272-Lab-6/blob/master/vgaconnections.png">
+</p>
+
 #### <div align="center">Figure 6.1: VGA pinout</div>
 
 ### 6.2 Section Overview
@@ -26,6 +29,8 @@ Video Graphics Array (VGA) can be used to display a wide range of resolutions an
 ### 6.5 Procedure:
 #### <div align="center">There are 6 steps to digital logic design</div>
 
+![Design Process Flow](https://github.com/regerj/ECE-272-Lab-4/blob/master/4.1%20Design%20Process.png)
+
 #### <div align="center">Design Process Figure 6.2: Use this process for designing the final project.</div>
 
 1. **Design:** The context of the design is established in this step. The context involves defining the inputs, desired outputs, and all the logic required in-between. In this step, all the minimizations and layout are planned for the design entry process. While this step is not always the longest, it should involve the most thought and effort. This typically requires a complete block diagram showing all the logic blocks and the connections between them, often with written explanations of specific functions.
@@ -42,9 +47,21 @@ To do this,
 1. Create a 25Mhz clock signal.
 2. Design modules to: Count clock cycles, Generate (H/Z)Sync Signals, and Control the RGB
 
+<p align="center">
+  <img width="550" height="350" src="https://github.com/regerj/ECE-272-Lab-6/blob/master/vgahorizontaltimingspecification.png">
+</p>
+
 #### <div align="center">Figure 6.3 Horizontal Timing Specifications</div>
 
+<p align="center">
+  <img width="550" height="300" src="https://github.com/regerj/ECE-272-Lab-6/blob/master/vgatimingspecs.png">
+</p>
+
 #### <div align="center">Figure 6.4 Hsync and Vsync Tables</div>
+
+<p align="center">
+  <img width="550" height="300" src="https://github.com/regerj/ECE-272-Lab-6/blob/master/untitled_diagram_2.png">
+</p>
 
 #### <div align="center">Figure 6.5 Block Diagram</div>
 
